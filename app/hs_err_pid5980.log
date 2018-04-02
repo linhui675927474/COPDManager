@@ -1,0 +1,155 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=5980, tid=0x0000000000000738
+#
+# JRE version:  (8.0_152-b01) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.152-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000020ed800):  JavaThread "Unknown thread" [_thread_in_vm, id=1848, stack(0x0000000002220000,0x0000000002320000)]
+
+Stack: [0x0000000002220000,0x0000000002320000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000020ed800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=1848, stack(0x0000000002220000,0x0000000002320000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 17920K, used 307K [0x00000000ec180000, 0x00000000ed580000, 0x0000000100000000)
+  eden space 15360K, 2% used [0x00000000ec180000,0x00000000ec1cccd8,0x00000000ed080000)
+  from space 2560K, 0% used [0x00000000ed300000,0x00000000ed300000,0x00000000ed580000)
+  to   space 2560K, 0% used [0x00000000ed080000,0x00000000ed080000,0x00000000ed300000)
+ ParOldGen       total 40960K, used 0K [0x00000000c4400000, 0x00000000c6c00000, 0x00000000ec180000)
+  object space 40960K, 0% used [0x00000000c4400000,0x00000000c4400000,0x00000000c6c00000)
+ Metaspace       used 772K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 73K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x00000000116e0000,0x00000000118c0000] byte_map_base: 0x00000000110be000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000069623950
+ Begin Bits: [0x0000000012180000, 0x0000000013070000)
+ End Bits:   [0x0000000013070000, 0x0000000013f60000)
+
+Polling page: 0x0000000000220000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000002320000, 0x0000000002590000, 0x0000000011320000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.055 loading class java/lang/Short
+Event: 0.055 loading class java/lang/Short done
+Event: 0.055 loading class java/lang/Integer
+Event: 0.056 loading class java/lang/Integer done
+Event: 0.056 loading class java/lang/Long
+Event: 0.056 loading class java/lang/Long done
+Event: 0.057 loading class java/lang/NullPointerException
+Event: 0.057 loading class java/lang/NullPointerException done
+Event: 0.057 loading class java/lang/ArithmeticException
+Event: 0.057 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x000000013f9f0000 - 0x000000013fa21000 	D:\Android\Android1\jre\bin\java.exe
+0x00000000773a0000 - 0x000000007754a000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077180000 - 0x000000007729f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd210000 - 0x000007fefd27a000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefe710000 - 0x000007fefe7eb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefee10000 - 0x000007fefeeaf000 	C:\Windows\system32\msvcrt.dll
+0x000007feff200000 - 0x000007feff21f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefe4c0000 - 0x000007fefe5ed000 	C:\Windows\system32\RPCRT4.dll
+0x00000000772a0000 - 0x000000007739a000 	C:\Windows\system32\USER32.dll
+0x000007feff190000 - 0x000007feff1f7000 	C:\Windows\system32\GDI32.dll
+0x000007fefd5a0000 - 0x000007fefd5ae000 	C:\Windows\system32\LPK.dll
+0x000007feff0c0000 - 0x000007feff18b000 	C:\Windows\system32\USP10.dll
+0x000007fefb970000 - 0x000007fefbb64000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007fefed90000 - 0x000007fefee01000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefe640000 - 0x000007fefe66e000 	C:\Windows\system32\IMM32.DLL
+0x000007feff540000 - 0x000007feff649000 	C:\Windows\system32\MSCTF.dll
+0x000007fefd110000 - 0x000007fefd142000 	C:\Windows\system32\nvinitx.dll
+0x000000006c3c0000 - 0x000000006c492000 	D:\Android\Android1\jre\jre\bin\msvcr100.dll
+0x0000000068e60000 - 0x000000006969e000 	D:\Android\Android1\jre\jre\bin\server\jvm.dll
+0x000007fef5b10000 - 0x000007fef5b19000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefe5f0000 - 0x000007fefe63d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefe4b0000 - 0x000007fefe4b8000 	C:\Windows\system32\NSI.dll
+0x000007fefa720000 - 0x000007fefa75b000 	C:\Windows\system32\WINMM.dll
+0x000007fefc270000 - 0x000007fefc27c000 	C:\Windows\system32\VERSION.dll
+0x0000000077560000 - 0x0000000077567000 	C:\Windows\system32\PSAPI.DLL
+0x000007fefae00000 - 0x000007fefae0f000 	D:\Android\Android1\jre\jre\bin\verify.dll
+0x000007fef5bf0000 - 0x000007fef5c19000 	D:\Android\Android1\jre\jre\bin\java.dll
+0x000007fef66d0000 - 0x000007fef66e6000 	D:\Android\Android1\jre\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dretrolambda.bytecodeVersion=50 -Dretrolambda.classpath=E:\COPDManager\app\libs\BaiduLBS_Android.jar;E:\COPDManager\app\libs\com.baidu.tts_2.3.1.20170808_e39ea89.jar;E:\COPDManager\app\libs\Usability.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\realm-android-library-3.4.0.aar\36c1b38b011a97cf54908f46aa27ee7b\jars\classes.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\io.realm\realm-annotations\3.4.0\ee860e7723eef61080e34f5b098f7ee22b356770\realm-annotations-3.4.0.jar;E:\COPDManager\material-calendarview\build\intermediates\intermediate-jars\debug\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\WheelPicker-1.5.5.aar\82b59b0e3640b4bedac03360ab8de001\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\0201e70703a8f8e44b1d92d08e591c62\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\jiecaovideoplayer-5.5.2.aar\d926a14684ff25a1732a804cf827baef\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\core-0.9.4.5.aar\0d73ba5e10efa8873ea70a632696f6e4\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\material-1.2.4.aar\3268d6eabdd759c41fee681fce5cf039\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.4.1.aar\5d61fc1a0fab648eb37f35c7d2b75b4d\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.0.6.aar\7106937a0eb842369155e23b2192a3a4\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\materialdatetimepicker-3.3.0.aar\e2b61f14cbdcd96d6a87b4023be4b75c\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\deba892390818219c4d998655d09cf45\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\26f3b0155fc5c79d17b9136e12b4dabd\jars\classes.jar;C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v13-26.1.0.aar\1e04e124d9-Dretrolambda.classpathFile=C:\Users\ADMINI~1\AppData\Local\Temp\inc-6138358813654012506.path -Dretrolambda.inputDir=E:\COPDManager\app\build\intermediates\classes\debug -Dretrolambda.outputDir=E:\COPDManager\app\build\intermediates\transforms\retrolambda\debug\0 -Dfile.encoding=GBK -Duser.country=CN -Duser.language=zh -Duser.variant 
+java_command: net.orfjackal.retrolambda.Main
+java_class_path (initial): C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\net.orfjackal.retrolambda\retrolambda\2.5.1\3db6629d3ba0168c580af3be44fe54014dfb105\retrolambda-2.5.1.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=F:\LINGO64_15\Lingo14.jar.;D:\java\lib\dt.jar;D:\java\lib\tools.jar
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\bin\win32;C:\Program Files (x86)\PTV_Vision\NEMA\JRE\bin\client;F:\MATLAB3\runtime\win64;F:\MATLAB3\bin;C:\Users\Administrator\AppData\Local\Android\sdk\platform-tools;C:\Users\Administrator\AppData\Local\Android\sdk\tools;;D:\Android\Git\Git\cmd;C:\Users\Administrator\AppData\Local\Android\sdk\platform-tools;E:\java_JDK\bin;D:\‘”∆ﬂ‘”∞À\VC\Common\Tools\WinNT;D:\‘”∆ﬂ‘”∞À\VC\Common\MSDev98\Bin;D:\‘”∆ﬂ‘”∞À\VC\Common\Tools;D:\‘”∆ﬂ‘”∞À\VC\VC98\bin;D:\‘”∆ﬂ‘”∞À\VC\Tools\WinNT;D:\‘”∆ﬂ‘”∞À\VC\MSDev98\Bin;D:\‘”∆ﬂ‘”∞À\VC\Tools;D:\‘”∆ﬂ‘”∞À\VC98\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;D:\mysql\mysql-5.7.19-winx64\bin;D:\java\bin;D:\java\jre\bin;C:\Users\Administrator\AppData\Local\Android\Sdk\tools;C:\Users\Administrator\AppData\Local\Android\sdk\platform-tools;;.;;.;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.23807)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 3913336k(301752k free), swap 4960052k(5488k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.152-b01) for windows-amd64 JRE (1.8.0_152-release-915-b01), built by "builder" with MS VC++ 10.0 (VS2010)
+
+time: Sun Apr 01 17:02:43 2018
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

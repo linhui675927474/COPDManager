@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/white"
+    tools:context=".activity.CatScaleActivity"
+    tools:showIn="@layout/activity_catscale">
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_tip"
+        android:textSize="12sp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/blue"/>
+
+    <TextView
+        android:id="@+id/tv_tips_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/tv_tips"
+        android:text="@string/tv_tip_content"
+        android:textSize="12sp"
+        android:textColor="@color/darkGrey"/>
+
+    <Button
+        android:id="@+id/btn_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_submit"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_pef"
+        android:clickable="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tips_detail"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/btn_cat" />
+
+</RelativeLayout>

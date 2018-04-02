@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.EvaluationActivity">
+
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/tv_pef_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_evaluation_result"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/tv_finish"
+            android:textSize="18sp"
+            android:textColor="@color/text_color_white"
+            android:clickable="true"
+            android:layout_marginEnd="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_evaluation"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_background_evaluation_great">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_evaluation"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_great"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/tv_evaluation_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80分"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="25dp"
+        android:text="@string/tv_great"
+        android:textColor="@color/darkGrey"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        android:id="@+id/btn_retest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_retest"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_pef"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_continue_dep"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_pef"
+        android:clickable="true"/>
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'realm-android'
+//apply from: 'tinker-support.gradle'
+
+repositories {
+    flatDir {
+        dir 'libs'
+    }
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.zju.biomedit.copdmanager"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 11
+        versionName "1.1.0"
+		//Enabling multidex support.  
+        multiDexEnabled true  
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "1FOg4p27nd8XS6djEWDYC9",
+                GETUI_APP_KEY   : "PHnYs4uJaI9paDNSNWS2w7",
+                GETUI_APP_SECRET: "u3MQzgE21F8PyTdmEp34g9"
+        ]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main { jniLibs.srcDir 'libs'  }
+    }
+
+    compileOptions {
+	// sourceCompatibility JavaVersion.VERSION_1_7  
+    // targetCompatibility JavaVersion.VERSION_1_7  
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+	
+	
+	//dexOptions {  
+    //    javaMaxHeapSize "4g"  
+    //}  
+}
+
+dependencies {
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')  //百度SDK配置
+	
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':material-calendarview')
+    compile files('libs/Usability.jar')
+    compile('cn.qqtheme.framework:WheelPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+	
+    compile files('libs/BaiduLBS_Android.jar')  //百度SDK配置
+	
+    compile "com.android.support:multidex:1.0.2" // 多dex配置
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:support-v13:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:support-vector-drawable:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'fm.jiecao:jiecaovideoplayer:5.5.2'
+    compile 'com.aurelhubert:ahbottomnavigation:2.0.6'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.afollestad.material-dialogs:core:0.9.4.5'
+    compile 'com.github.vipulasri:timelineview:1.0.5'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile 'com.github.traex.expandablelayout:library:1.2.2'
+    compile 'com.github.rey5137:material:1.2.4'
+    compile 'com.android.support:percent:26.1.0'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'com.daasuu:BubbleLayout:1.1.1'
+    compile 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.wdullaer:materialdatetimepicker:3.3.0'
+    compile 'com.alibaba:fastjson:1.2.30'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.getui:sdk:2.11.1.0'
+    //compile 'com.tencent.bugly:crashreport_upgrade:1.3.4'
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}

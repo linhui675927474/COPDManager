@@ -1,0 +1,339 @@
+<resources>
+    <string name="app_name">COPD管家</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">主页</string>
+    <string name="title_class">课堂</string>
+    <string name="title_smoke">戒烟</string>
+    <string name="title_mine">我的</string>
+    <string name="title_scale">量表</string>
+    <string name="title_cat_scale">CAT量表</string>
+    <string name="title_pef_history">PEF历史趋势</string>
+    <string name="title_uncomfort">不适记录</string>
+    <string name="title_notification">推送消息</string>
+    <string name="title_uncomfort_result">温馨提示</string>
+    <string name="title_depression_scale">抑郁量表</string>
+    <string name="title_anxiety_scale">焦虑量表</string>
+    <string name="title_pef">峰流速PEF记录</string>
+    <string name="title_pef_record">添加峰流速</string>
+    <string name="title_evaluation_result">评估结果</string>
+    <string name="title_new_pef">最新的一次PEF</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_login">登录</string>
+    <string name="title_register">注册</string>
+    <string name="title_appointment">慢病门诊预约</string>
+    <string name="result_appointment">预约结果</string>
+    <string name="history_appointment">预约记录</string>
+
+    <string name="text_pef">PEF每周至少测量一次（建议每天用药前记录）\n医生才能准确评估您的哮喘控制情况</string>
+    <string name="button_pef">立即添加PEF</string>
+    <string name="tv_tip_content">数字0—5表示严重程度，请选择最能反应您当前情况的选项。</string>
+    <string name="tv_tip_content_depression_scale">本测试共有9个问题，请患者本人认真填写。</string>
+    <string name="tv_tip_content_anxiety_scale">本测试共有7个问题，请患者本人认真填写。</string>
+    <string name="tv_tip_content_cat_scale">本测试共有8个问题，请患者本人认真填写。</string>
+    <string name="tv_tip_scale">患者本人回答</string>
+    <string name="tv_not">完全不会</string>
+    <string name="tv_sometimes">偶尔几天</string>
+    <string name="tv_half">一半以上的日子</string>
+    <string name="tv_everyday">几乎每天</string>
+    <string name="tv_no_data">该周没有进行过PEF记录</string>
+
+
+    <string name="tv_finish">完成</string>
+    <string name="tv_tip">说明</string>
+    <string name="tv_submit">提交</string>
+    <string name="tv_retest">重新测试</string>
+    <string name="tv_continue_dep">继续填写其他量表</string>
+    <string name="tv_sure">确定</string>
+    <string name="tv_make_sure">确认</string>
+    <string name="tv_continue">继续</string>
+    <string name="tv_cancel">取消</string>
+    <string name="tv_notice">注意</string>
+    <string name="tv_hint">提示</string>
+    <string name="tv_save">存储</string>
+    <string name="tv_know">知道了</string>
+    <string name="tv_notice_text">提交后无法修改！</string>
+    <string name="tv_appointment_notice_text">您确定要进行预约吗？</string>
+    <string name="tv_appointment_cancel_text">您确定要取消预约吗？</string>
+    <string name="tv_cat_scale_text">您本周已经填写过CAT量表，是否继续填写？</string>
+    <string name="tv_phq_scale_text">您本月已经填写过抑郁量表，是否继续填写？</string>
+    <string name="tv_gad_scale_text">您本月已经填写过焦虑量表，是否继续填写？</string>
+    <string name="tv_pef_text">您本周已经记录过峰流速，是否继续记录？</string>
+
+
+    <string name="tv_question1">1. 在过去的两周内，您是否感觉到做事时提不起劲或没有兴趣？</string>
+    <string name="tv_question2">2. 在过去的两周内，您是否感觉到心情低落、沮丧或绝望？</string>
+    <string name="tv_question3">3. 在过去的两周内，您是否感觉到入睡困难、睡不安稳或睡眠过多？</string>
+    <string name="tv_question4">4. 在过去的两周内，您是否感觉到疲倦或没有活力？</string>
+    <string name="tv_question5">5. 在过去的两周内，您是否感觉到食欲不振或吃太多？</string>
+    <string name="tv_question6">6. 在过去的两周内，您是否觉得自己很糟，或觉得自己很失败，或让自己或家人失望？</string>
+    <string name="tv_question7">7. 在过去的两周内，您是否感觉到对事物专注有困难，例如阅读报纸或看电视时？</string>
+    <string name="tv_question8">8. 在过去的两周内，您是否感觉到动作或说话速度缓慢到别人已经觉察？或正好相反——烦躁或坐立不安、动来动去的情况更胜于平常？</string>
+    <string name="tv_question9">9. 在过去的两周内，您是否感觉到有不如死掉或用某种方式伤害自己的念头？</string>
+
+
+    <string name="tv_anxiety_question1">1. 在过去的两周内，您是否感觉到紧张、焦虑或急切？</string>
+    <string name="tv_anxiety_question2">2. 在过去的两周内，您是否感觉到不能够停止或控制担忧？</string>
+    <string name="tv_anxiety_question3">3. 在过去的两周内，您是否感觉到对各种各样的事情担忧过多？</string>
+    <string name="tv_anxiety_question4">4. 在过去的两周内，您是否感觉到很难放松下来？</string>
+    <string name="tv_anxiety_question5">5. 在过去的两周内，您是否感觉到由于不安而无法静坐？</string>
+    <string name="tv_anxiety_question6">6. 在过去的两周内，您是否感觉到变得容易烦躁或急躁？</string>
+    <string name="tv_anxiety_question7">7. 在过去的两周内，您是否感觉到似乎将有可怕的事情发生而害怕？</string>
+
+    <string name="tv_cat_question1">1. 您经常咳嗽吗？</string>
+    <string name="tv_cat_question2">2. 您平时有痰吗？</string>
+    <string name="tv_cat_question3">3. 您平时有胸闷的感觉吗？</string>
+    <string name="tv_cat_question4">4. 爬坡或上1层楼梯时有气喘吗？</string>
+    <string name="tv_cat_question5">5. 在家里能做事情吗？</string>
+    <string name="tv_cat_question6">6. 有肺部疾病对外出的信心有影响吗？</string>
+    <string name="tv_cat_question7">7. 您的睡眠如何？</string>
+    <string name="tv_cat_question8">8. 您的精力如何？</string>
+
+    <string name="tv_cat_question1_ans0">从不咳嗽</string>
+    <string name="tv_cat_question1_ans1">基本不咳嗽</string>
+    <string name="tv_cat_question1_ans2">很少咳嗽</string>
+    <string name="tv_cat_question1_ans3">偶有咳嗽</string>
+    <string name="tv_cat_question1_ans4">经常咳嗽</string>
+    <string name="tv_cat_question1_ans5">总是咳嗽</string>
+    <string name="tv_cat_question2_ans0">一点痰也没有</string>
+    <string name="tv_cat_question2_ans1">基本无痰</string>
+    <string name="tv_cat_question2_ans2">很少有痰</string>
+    <string name="tv_cat_question2_ans3">偶尔有痰</string>
+    <string name="tv_cat_question2_ans4">痰量多</string>
+    <string name="tv_cat_question2_ans5">有很多很多痰</string>
+    <string name="tv_cat_question3_ans0">没有任何胸闷的感觉</string>
+    <string name="tv_cat_question3_ans1">轻微的胸闷</string>
+    <string name="tv_cat_question3_ans2">偶有胸闷</string>
+    <string name="tv_cat_question3_ans3">常有胸闷</string>
+    <string name="tv_cat_question3_ans4">胸闷症状重</string>
+    <string name="tv_cat_question3_ans5">有严重胸闷感觉</string>
+    <string name="tv_cat_question4_ans0">没有气喘的感觉</string>
+    <string name="tv_cat_question4_ans1">轻微气喘</string>
+    <string name="tv_cat_question4_ans2">稍感气喘</string>
+    <string name="tv_cat_question4_ans3">感气喘</string>
+    <string name="tv_cat_question4_ans4">明显气喘</string>
+    <string name="tv_cat_question4_ans5">严重喘不过气</string>
+    <string name="tv_cat_question5_ans0">能做任何事情</string>
+    <string name="tv_cat_question5_ans1">能做绝大部分事情</string>
+    <string name="tv_cat_question5_ans2">能做大部分事情</string>
+    <string name="tv_cat_question5_ans3">能做轻体力事情</string>
+    <string name="tv_cat_question5_ans4">只能做个别事情</string>
+    <string name="tv_cat_question5_ans5">任何事情都受影响</string>
+    <string name="tv_cat_question6_ans0">对外出很有信心</string>
+    <string name="tv_cat_question6_ans1">对外出有信心</string>
+    <string name="tv_cat_question6_ans2">对外出有部分信心</string>
+    <string name="tv_cat_question6_ans3">对外出信心小</string>
+    <string name="tv_cat_question6_ans4">对外出不太有信心</string>
+    <string name="tv_cat_question6_ans5">对外出没有信心</string>
+    <string name="tv_cat_question7_ans0">非常好</string>
+    <string name="tv_cat_question7_ans1">睡眠好</string>
+    <string name="tv_cat_question7_ans2">大部分时间睡眠好</string>
+    <string name="tv_cat_question7_ans3">睡眠欠佳</string>
+    <string name="tv_cat_question7_ans4">睡眠差</string>
+    <string name="tv_cat_question7_ans5">睡眠相当差</string>
+    <string name="tv_cat_question8_ans0">精力很旺盛</string>
+    <string name="tv_cat_question8_ans1">精力好</string>
+    <string name="tv_cat_question8_ans2">精力尚可</string>
+    <string name="tv_cat_question8_ans3">精力欠佳</string>
+    <string name="tv_cat_question8_ans4">精力差</string>
+    <string name="tv_cat_question8_ans5">一点精力都没有</string>
+
+
+    <string name="tv_6MWD_start">开始测试</string>
+    <string name="tv_6MWD_introduction">测试说明</string>
+    <string name="tv_6MWD_state">测试状态</string>
+    <string name="tv_6MWD_distance">测试距离</string>
+    <string name="tv_6MWD_network">网络状态</string>
+    <string name="tv_6MWD_end">终止测试</string>
+    <string name="tv_6MWD_submit">提交并显示数据</string>
+    <string name="tv_6MWD_data">数据展示与分析</string>
+    <string name="tv_6MWD_edit">一定要先输入定位时间间隔哦！\n（5 10 15 20 25 30）</string>
+    <string name="tv_6MWD_history">历史数据</string>
+
+
+    <string name="total_80">请继续保持！记得要按时完成任务哦！</string>
+    <string name="total_60">请继续努力！记得要按时完成任务哦！</string>
+    <string name="total_40">请联系医生进一步调整治疗方案</string>
+    <string name="total_20">您需要立刻去门诊就诊控制病情！</string>
+    <string name="total_0">请填写CAT量表，并进行峰流速记录</string>
+
+
+    <string name="tv_drug_name">药物名称</string>
+    <string name="tv_input_name">点击输入名称</string>
+    <string name="tv_drug_time">用药时间</string>
+    <string name="title_drug_record">用药记录</string>
+    <string name="title_drug_select">选择用药</string>
+    <string name="title_drug_history">服药历史记录</string>
+    <string name="tv_add">添加</string>
+    <string name="tv_add_drug">添加用药记录</string>
+    <string name="tv_today_drug">今日已服用药品</string>
+    <string name="tv_pef_hint">PEF每周至少测量一次</string>
+    <string name="tv_history">查看历史记录</string>
+    <string name="tv_his">历史</string>
+    <string name="tv_today_no_data">今日无服药记录</string>
+    <string name="tv_record_time">测量时间</string>
+    <string name="tv_week_history">周数据统计</string>
+    <string name="tv_time">时间</string>
+    <string name="tv_drug_kinds">药物种类</string>
+
+    <string name="tv_sldie">舒利迭</string>
+    <string name="tv_sldie_dis">沙美特罗替卡松粉吸入剂</string>
+    <string name="tv_stxf">噻托溴铵粉吸入剂</string>
+    <string name="tv_xbkdb">信必可都保</string>
+    <string name="tv_xbkdb_dis">布地奈德福莫特罗粉吸入剂</string>
+    <string name="tv_srl">舒瑞灵</string>
+    <string name="tv_srl_dis">沙丁胺醇气雾剂</string>
+    <string name="tv_acjp">氨茶碱片</string>
+
+
+    <string name="tv_uncomfort_record_time">记录时间</string>
+    <string name="tv_uncomfort_inflammation">炎症表现</string>
+    <string name="tv_uncomfort_lung">肺功能下降</string>
+    <string name="tv_uncomfort_heart">心功能衰竭</string>
+    <string name="tv_uncomfort_breath">呼吸衰竭</string>
+    <string name="tv_uncomfort_save">保存</string>
+    <string name="tv_uncomfort_note">备注</string>
+    <string name="tv_uncomfort_inflammation_1">咳嗽</string>
+    <string name="tv_uncomfort_inflammation_2">黄痰</string>
+    <string name="tv_uncomfort_inflammation_3">发烧</string>
+    <string name="tv_uncomfort_inflammation_4">血痰</string>
+    <string name="tv_uncomfort_lung_1">气短</string>
+    <string name="tv_uncomfort_lung_2">喘息</string>
+    <string name="tv_uncomfort_lung_3">活动后气短加重</string>
+    <string name="tv_uncomfort_heart_1">腿肿</string>
+    <string name="tv_uncomfort_heart_2">腹胀</string>
+    <string name="tv_uncomfort_heart_3">反酸水</string>
+    <string name="tv_uncomfort_heart_4">消瘦</string>
+    <string name="tv_uncomfort_breath_1">迷糊</string>
+    <string name="tv_uncomfort_breath_2">嗜睡</string>
+    <string name="tv_discomfort">不适</string>
+    <string name="tv_no_discomfort">正常</string>
+    <string name="tv_today_symptom">今日症状</string>
+
+
+    <string name="tv_log_out">登出</string>
+    <string name="tv_user_information">个人信息</string>
+    <string name="tv_user_collection">我的收藏</string>
+    <string name="tv_user_remind">提醒设置</string>
+    <string name="tv_user_feedback">意见反馈</string>
+
+    <string name="tv_user_name">姓名</string>
+    <string name="tv_user_sex">性别</string>
+    <string name="tv_user_birth">出生日期</string>
+    <string name="tv_user_age">年龄</string>
+    <string name="tv_user_height">身高</string>
+    <string name="tv_user_weight">体重</string>
+    <string name="tv_user_phone">手机号</string>
+
+    <string name="tv_login_hint_name">请输入患者号</string>
+    <string name="tv_login_hint_password">请输入密码</string>
+    <string name="tv_user_id">患者号</string>
+    <string name="tv_next">下一步</string>
+    <string name="tv_previous">上一步</string>
+    <string name="tv_finish_register">完成注册</string>
+
+    <string name="tv_great">您好，根据评测结果，您目前慢性阻塞性肺疾病病情控制良好，请继续保持！</string>
+    <string name="tv_mid">您好，根据评测结果，您目前慢性阻塞性肺疾病病情控制中等，需要继续努力！</string>
+    <string name="tv_poor">您好，根据评测结果，您目前慢性阻塞性肺疾病病情控制不佳，您需要联系医生进一步调整治疗方案。</string>
+    <string name="tv_bad">您好，根据评测结果，您目前慢性阻塞性肺疾病病情未得到控制，您需要立刻前往门诊就诊控制病情。</string>
+
+    <string name="tv_cat_reminder">填写CAT量表提醒</string>
+    <string name="tv_phq_reminder">填写抑郁量表提醒</string>
+    <string name="tv_gad_reminder">填写焦虑量表提醒</string>
+    <string name="tv_scale_reminder">填写量表提醒</string>
+    <string name="tv_pef_reminder">记录峰流速提醒</string>
+    <string name="tv_drug_reminder">服用药物提醒</string>
+
+    <string name="tv_freq_hint">目前提醒周期无法进行修改，您应该按照医生设定的周期进行记录。\n\n每天：每天提醒\n每周：每周周一提醒\n每月：每月月初提醒</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scale_list">ScaleListActivity</string>
+    <string name="title_activity_pef_monitor">PefMonitorActivity</string>
+    <string name="title_activity_drug">DrugActivity</string>
+    <string name="title_activity_uncomfort">UncomfortActivity</string>
+    <string name="title_activity_catscale">CATScaleActivity</string>
+    <string name="title_activity_depression1">DepressionActivity1</string>
+    <string name="title_activity_depression2">DepressionActivity2</string>
+    <string name="title_activity_depression3">DepressionActivity3</string>
+    <string name="title_activity_depression4">DepressionActivity4</string>
+    <string name="title_activity_depression5">DepressionActivity5</string>
+    <string name="title_activity_depression6">DepressionActivity6</string>
+    <string name="title_activity_depression7">DepressionActivity7</string>
+    <string name="title_activity_depression8">DepressionActivity8</string>
+    <string name="title_activity_depression9">DepressionActivity9</string>
+    <string name="title_activity_anxiety1">AnxietyActivity1</string>
+    <string name="title_activity_anxiety2">AnxietyActivity2</string>
+    <string name="title_activity_anxiety3">AnxietyActivity3</string>
+    <string name="title_activity_anxiety4">AnxietyActivity4</string>
+    <string name="title_activity_anxiety5">AnxietyActivity5</string>
+    <string name="title_activity_anxiety6">AnxietyActivity6</string>
+    <string name="title_activity_anxiety7">AnxietyActivity7</string>
+
+    <string-array name="custom_weekdays">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <string-array name="custom_months">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+
+    <string name="wpedittext_validation_valid_field">valid</string>
+    <string name="wpedittext_validation_empty_field">empty</string>
+    <string name="wpedittext_validation_invalid_field">invalid</string>
+    <string name="wpedittext_sample_hint">Hint</string>
+
+    <!-- AutoUpdate Dialog -->
+    <string name="dlg_title_auto_update">发现新版本</string>
+    <string name="btn_text_update_later">稍后再说</string>
+    <string name="btn_text_update_now">立即更新</string>
+    <string name="content_update_content">更新内容</string>
+
+    <!-- Download Dialog -->
+    <string name="dlg_title_download">版本更新</string>
+    <string name="btn_text_handle_background">转到后台处理</string>
+    <string name="content_download_content">正在下载新版本，请耐心等待...</string>
+    <string name="content_download_progress">下载进度：0%</string>
+
+    <string name="tts_main">您好，欢迎使用慢阻肺管理软件，很高兴见到您，为了进一步了解您的病情，我们先一起做个测试吧。首先我需要知道您的用药情况</string>
+    <string name="tts_discomfort">欢迎进入不适症状记录，您今天有没有不舒服呢，快快告诉我吧。</string>
+    <string name="tts_good">您好，您表现的非常棒，加油，继续保持哦</string>
+    <string name="tts_mid">您好，根据测评您目前存在一些小问题，不用担心哦，我们会根据您的问题给予您相应的帮助。</string>
+    <string name="tts_bad">您好，您目前的状况不是太好，我们会及时反馈给您的在线医生，让他们来帮助您解决目前问题，请耐心等待呦。</string>
+
+    <!-- 输入限制 -->
+    <string name="input_type_letters_and_numbers">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOASDFGHJKLZXCVBNM</string>
+    <string name="title_activity_pef_history">PefHistoryActivity</string>
+    <string name="title_activity_appointment">AppointmentActivity</string>
+    <string name="title_activity_appoint_result">AppointResultActivity</string>
+    <string name="title_activity_appoint_history">AppointHistoryActivity</string>
+    <string name="title_activity_discomfort_result">DiscomfortResultActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+
+    <string name="kno_name">知识名称</string>
+    <string name="kno_time">知识发布时间</string>
+    <string name="kno_read">阅读情况</string>
+    <string name="read">已读</string>
+    <string name="not_read">未读</string>
+    <string name="collect">已收藏</string>
+    <string name="not_collect">收藏</string>
+    <string name="activity_collect">我的收藏</string>
+    <string name="title_activity_collect">CollectActivity</string>
+</resources>

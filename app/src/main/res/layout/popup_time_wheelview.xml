@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/layout_wheel_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="时/h"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_weight="1"
+                android:layout_marginRight="0.5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="分/min"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="0.5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <com.zju.biomedit.copdmanager.view.WheelView
+                    android:id="@+id/wheelview1"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    app:itemNumber="5"
+                    app:lineColor="@color/blue"
+                    app:maskHight="32dp"
+                    app:noEmpty="true"
+                    app:normalTextColor="@color/grey"
+                    app:normalTextSize="16sp"
+                    app:selectedTextColor="@color/blue"
+                    app:selectedTextSize="22sp"
+                    app:unitHight="30dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="70dp"
+                android:background="@color/backgroundGrey"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <com.zju.biomedit.copdmanager.view.WheelView
+                    android:id="@+id/wheelview2"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    app:itemNumber="5"
+                    app:lineColor="@color/blue"
+                    app:maskHight="32dp"
+                    app:noEmpty="true"
+                    app:normalTextColor="@color/grey"
+                    app:normalTextSize="16sp"
+                    app:selectedTextColor="@color/blue"
+                    app:selectedTextSize="22sp"
+                    app:unitHight="30dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_popup"
+            android:layout_marginRight="0.5dp"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:src="@mipmap/icon_delete"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_correct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="0.5dp"
+            android:background="@drawable/btn_popup"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:src="@mipmap/icon_correct"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

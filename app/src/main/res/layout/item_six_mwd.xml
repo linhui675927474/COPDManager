@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_value_zero"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_cat_scale"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_value_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_value_one"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_cat_scale"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@id/tv_value_zero"
+        app:layout_constraintEnd_toStartOf="@+id/tv_value_two"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_value_zero"/>
+
+    <TextView
+        android:id="@+id/tv_value_two"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_cat_scale"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@id/tv_value_one"
+        app:layout_constraintEnd_toStartOf="@+id/tv_value_three"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_value_zero"/>
+
+
+    <TextView
+        android:id="@+id/tv_value_three"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_cat_scale"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@id/tv_value_two"
+        app:layout_constraintEnd_toStartOf="@+id/tv_value_four"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_value_zero"/>
+
+    <TextView
+        android:id="@+id/tv_value_four"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_cat_scale"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@id/tv_value_three"
+        app:layout_constraintEnd_toStartOf="@+id/tv_value_five"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_value_zero"/>
+
+    <TextView
+        android:id="@+id/tv_value_five"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_cat_scale"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@id/tv_value_four"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_value_zero"/>
+
+    <com.daasuu.bl.BubbleLayout
+        android:id="@+id/bl_zero"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="8dp"
+        app:bl_arrowDirection="bottom"
+        app:bl_arrowHeight="10dp"
+        app:bl_arrowPosition="14dp"
+        app:bl_arrowWidth="10dp"
+        app:bl_cornersRadius="6dp"
+        app:bl_strokeColor="@color/colorPrimary"
+        app:bl_strokeWidth="2dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_value_zero"
+        app:layout_constraintStart_toStartOf="@id/tv_value_zero">
+
+        <TextView
+            android:id="@+id/cat_text_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我从不咳嗽"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+    </com.daasuu.bl.BubbleLayout>
+
+    <com.daasuu.bl.BubbleLayout
+        android:id="@+id/bl_five"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:bl_arrowDirection="bottom"
+        app:bl_arrowHeight="10dp"
+        app:bl_arrowPosition="116dp"
+        app:bl_arrowWidth="10dp"
+        app:bl_cornersRadius="6dp"
+        app:bl_strokeColor="@color/colorPrimary"
+        app:bl_strokeWidth="2dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_value_five"
+        app:layout_constraintEnd_toEndOf ="@id/tv_value_five">
+
+        <TextView
+            android:id="@+id/cat_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我一直在咳嗽"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+    </com.daasuu.bl.BubbleLayout>
+
+
+</android.support.constraint.ConstraintLayout>

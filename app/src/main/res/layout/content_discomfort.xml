@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.DiscomfortActivity"
+    tools:showIn="@layout/activity_discomfort">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundGrey"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="18dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_discomfort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:clickable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_no_discomfort"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/tv_today_symptom"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_no_discomfort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="25dp"
+                        android:layout_toStartOf="@+id/tv_discomfort"
+                        android:background="@drawable/shape_discomfort"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="25dp"
+                        android:paddingStart="25dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/tv_no_discomfort"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_discomfort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/shape_discomfort"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="25dp"
+                        android:paddingStart="25dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/tv_discomfort"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_discomfort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_uncomfort_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_white"
+                        android:clickable="true"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/tv_uncomfort_record_time"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_arrow"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:src="@mipmap/ic_arrow" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@id/iv_arrow"
+                            android:text="21:00"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_inflammation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/white"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_uncomfort_inflammation_1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/tv_uncomfort_inflammation"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_inflammation_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_toStartOf="@+id/tv_uncomfort_inflammation_2"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_inflammation_1"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_inflammation_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_inflammation_2"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_inflammation_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tv_uncomfort_inflammation_1"
+                            android:layout_below="@+id/tv_uncomfort_inflammation_1"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_inflammation_3"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_inflammation_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tv_uncomfort_inflammation_2"
+                            android:layout_below="@+id/tv_uncomfort_inflammation_2"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_inflammation_4"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_lung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/white"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_uncomfort_lung_1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/tv_uncomfort_lung"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_lung_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_toStartOf="@+id/tv_uncomfort_lung_2"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_lung_1"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_lung_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_lung_2"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_lung_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tv_uncomfort_lung_1"
+                            android:layout_below="@+id/tv_uncomfort_lung_1"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_lung_3"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_heart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/white"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_uncomfort_heart_1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/tv_uncomfort_heart"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_heart_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_toStartOf="@+id/tv_uncomfort_heart_2"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_heart_1"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_heart_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_heart_2"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_heart_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tv_uncomfort_heart_1"
+                            android:layout_below="@+id/tv_uncomfort_heart_1"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_heart_3"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_heart_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tv_uncomfort_heart_2"
+                            android:layout_below="@+id/tv_uncomfort_heart_2"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_heart_4"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_breath"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/white"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_uncomfort_breath_1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/tv_uncomfort_breath"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_breath_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_toStartOf="@+id/tv_uncomfort_breath_2"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_breath_1"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_uncomfort_breath_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/shape_discomfort"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/tv_uncomfort_breath_2"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_discomfort_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:height="65dp"
+                        android:background="@drawable/shape_discomfort"
+                        android:gravity="top|start"
+                        android:hint="@string/tv_uncomfort_note"
+                        android:padding="8dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_discomfort_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_shape_pef"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/tv_uncomfort_save"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundGrey"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/kno_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_doctor"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/pic_doctor" />
+            
+            <LinearLayout
+                android:id="@+id/ll_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tv_dis_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/red"
+                    android:layout_centerVertical="true"
+                    android:text="咳嗽："/>
+                <TextView
+                    android:id="@+id/tv_dis_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="16sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/darkGrey"
+                    android:text="若出现单纯咳嗽，咽部有痒感、异物感，考虑气道高反应，可吸入布地奈德福莫特罗，或口服茶碱类药物、扑尔敏等，若前驱有受凉史，可加用金莲清热颗粒、莲花清瘟胶囊、四季抗病毒口服液等抗病毒药物。"/>/>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

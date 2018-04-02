@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:text="注册信息——体重"
+        android:textSize="18sp"
+        android:textColor="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <EditText android:id="@+id/edt_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:padding="10dp"
+            android:hint="体重"
+            android:textColorHint="@color/lightGrey"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:background="@drawable/shape_register_input_border"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="42dp"
+            android:text="kg"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_previous_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/tv_previous"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape_pef" />
+
+        <Button android:id="@+id/btn_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/tv_next"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape_pef" />
+
+    </LinearLayout>
+
+    <include android:id="@+id/layout_numeric_keyboard"
+        layout="@layout/keyboard_numeric" />
+
+</LinearLayout>
+
+

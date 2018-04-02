@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_background_homepage">
+
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/current_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/end_test"
+            android:textSize="8sp"
+            android:text="@string/tv_6MWD_state"/>
+
+        <com.zju.biomedit.copdmanager.view.CircleTimeProgressView
+            android:id="@+id/six_mwd_circle_progress"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+
+        <Button
+        android:id="@+id/end_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+            android:layout_above="@+id/submit_display_6mwd_data"
+        android:text="@string/tv_6MWD_end"/>
+
+        <Button
+        android:id="@+id/submit_display_6mwd_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+        android:text="@string/tv_6MWD_submit"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
+
+

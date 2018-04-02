@@ -1,0 +1,116 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/darkGrey">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="vertical"
+        android:background="#ff000000">
+
+        <!-- 1.标题栏 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp">
+
+            <TextView android:id="@+id/txv_dlg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/dlg_title_download"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <!-- 分割线 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightGrey" />
+
+        <!-- 2.内容主体 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <!-- 2.1.内容文本 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/txv_dlg_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/content_download_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+
+            <!-- 2.2.进度条 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <ProgressBar android:id="@+id/progressbar_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/StyleProgressBarHorizontal"
+                    android:background="@drawable/shape_progressbar_horizontal_bg"
+                    android:progress="0"/>
+            </RelativeLayout>
+
+            <!-- 2.3.进度文本 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <TextView android:id="@+id/txv_progress_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/content_download_progress"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightGrey" />
+
+        <!-- 3.底部状态栏 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGrey">
+
+            <Button android:id="@+id/btn_handle_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/btn_text_handle_background"
+                android:background="@drawable/btn_white"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

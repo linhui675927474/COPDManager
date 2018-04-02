@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zju.biomedit.copdmanager.activity.AppointmentActivity"
+    tools:showIn="@layout/activity_appointment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_cat_scale_pressed"
+                android:text="!"/>
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv_notice"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerVertical="true"
+                android:text="慢病门诊时间为每周五下午"
+                android:textSize="15sp"
+                android:textColor="@color/blue"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:text="就诊时间"
+                android:textSize="16sp"
+                android:layout_marginLeft="8dp" />
+            <ImageView
+                android:id="@+id/iv_arrow_time"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/ic_arrow" />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/iv_arrow_time"
+                android:layout_centerVertical="true"
+                android:text="2017-09-29-上午"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgroundGrey"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:text="可预约时间段"
+                android:textSize="16sp"
+                android:layout_marginLeft="8dp" />
+            <ImageView
+                android:id="@+id/iv_arrow_appointment"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/ic_arrow" />
+            <TextView
+                android:id="@+id/tv_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/iv_arrow_appointment"
+                android:layout_centerVertical="true"
+                android:text="14:00-14:30 1号"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgroundGrey"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:text="医生"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/iv_arrow_doctor"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/ic_arrow" />
+            <TextView
+                android:id="@+id/tv_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/iv_arrow_doctor"
+                android:layout_centerVertical="true"
+                android:text="陈娟"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgroundGrey"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:text="就诊人"
+                android:textSize="16sp"
+                android:layout_marginLeft="8dp" />
+            <ImageView
+                android:id="@+id/iv_arrow_name"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/ic_arrow" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/iv_arrow_name"
+                android:layout_centerVertical="true"
+                android:text="汪哲宇"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgroundGrey"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_white"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:text="挂号费用"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/iv_arrow_cost"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/ic_arrow" />
+            <TextView
+                android:id="@+id/tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/iv_arrow_cost"
+                android:layout_centerVertical="true"
+                android:text="10元"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认预约"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape_pef"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:text="查看预约记录"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:textColor="@drawable/tv_history"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
